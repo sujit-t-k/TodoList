@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Todo List by Sujit T K</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body> 
+    <ul class="nav_bar">
+      <li style ="float:left;"><label id ="lbl_day_of_week" type = "text"></label></li>
+        <li style ="float:left; padding-left: 20px;"><label id="lbl_date_and_time" type = "text" ></label></li> 
+      <li style="float:right;"> 
+        <label style="padding-right: 5px;">Night Mode</label>
+        <label class="switch">
+          <input id="dark_theme_checked" type="checkbox" onclick="theme_apply()">
+          <span class="slider round"></span>
+        </label>
+      </li>
+      <li style="float:right; padding-left: 2px;">
+        <div class="dropdown">
+          <button id="font_name" class="dropbtn">Font Name <i class="fa fa-caret-down"></i> </button>            
+          <div class="dropdown-content">
+            <label onmouseover="setFont('Poppins')">Poppins</label>
+            <label onmouseover="setFont('Pacifico')">Pacifico</label>
+            <label onmouseover="setFont('Lobster')">Lobster</label>
+            <label onmouseover="setFont('Indie Flower')">Indie Flower</label>
+            <label onmouseover="setFont('Permanent Marker')">Permanent Marker</label>
+            <label onmouseover="setFont('Crimson Text')">Crimson Text</label>
+            <label onmouseover="setFont('Sofia')">Sofia</label>
+          </div>
+        </div>
+      </li>
+      <li style="float:right; padding-right: 2px;"><label>Font : </label></li>
+    </ul>   
+    <div class="wrapper">
+      <h2 class="todolist_label"> Todo List</h2>
+      <div class="task-input">
+        <img src="bars-icon.svg" alt="icon">
+        <input type="text" placeholder="Add a new task">
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+    <script src="script.js"></script>    
+  </body>
+</html>
