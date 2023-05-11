@@ -1,56 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">  
-    <title>Todo List by Sujit T K</title>
-    <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body> 
-    <ul class="nav_bar">
-      <li style ="float:left;"><label id ="lbl_day_of_week" type = "text"></label></li>
-        <li style ="float:left; padding-left: 20px;"><label id="lbl_date_and_time" type = "text" ></label></li> 
-      <li style="float:right;"> 
-        <label style="padding-right: 5px;">Night Mode</label>
-        <label class="switch">
-          <input id="dark_theme_checked" type="checkbox" onclick="theme_apply()">
-          <span class="slider round"></span>
-        </label>
-      </li>
-      <li style="float:right; padding-left: 2px;">
-        <div class="dropdown">
-          <button id="font_name" class="dropbtn">Font Name <i class="fa fa-caret-down"></i> </button>            
-          <div class="dropdown-content">
-            <label onmouseover="setFont('Poppins')">Poppins</label>
-            <label onmouseover="setFont('Pacifico')">Pacifico</label>
-            <label onmouseover="setFont('Lobster')">Lobster</label>
-            <label onmouseover="setFont('Indie Flower')">Indie Flower</label>
-            <label onmouseover="setFont('Permanent Marker')">Permanent Marker</label>
-            <label onmouseover="setFont('Crimson Text')">Crimson Text</label>
-            <label onmouseover="setFont('Sofia')">Sofia</label>
-          </div>
-        </div>
-      </li>
-      <li style="float:right; padding-right: 2px;"><label>Font : </label></li>
-    </ul>   
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
     <div class="wrapper">
-      <h2 class="todolist_label"> Todo List</h2>
-      <div class="task-input">
-        <img src="bars-icon.svg" alt="icon">
-        <input type="text" placeholder="Add a new task">
+        <h2 class="login_label">Login</h2>        
+        <label class = "lbl_email"> Email : </label>
+        <input class = "txt_email" type="text" placeholder="example@mail.com">
+        <label class = "lbl_password"> Password : </label>
+        <input class = "txt_password" type="password" placeholder="********">
+        <button class="btn_login">LOG-IN</button>
+        <button class="btn_clear">CLEAR</button>
+        <input class="chkbox" type="checkbox">
+        <label class="lbl_show_pwd">Show Password</label>
+        <label class="signuplink"><a href="signup.html">Don't have an account?</a></label>
+        <div id="signup"></div>
       </div>
-      <div class="controls">
-        <div class="filters">
-          <span class="active" id="all">All</span>
-          <span id="pending">Pending</span>
-          <span id="completed">Completed</span>
-        </div>
-        <button class="clear-btn">Clear All</button>
-      </div>
-      <ul class="task-box"></ul>
-    </div>
-    <script src="script.js"></script>    
-  </body>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>   
+</body>
 </html>

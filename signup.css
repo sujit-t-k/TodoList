@@ -1,0 +1,193 @@
+:root {
+    --body-bg : linear-gradient(135deg, #4AB1FF, #2D5CFE);
+    --wrapper_bg : #fefefe;
+    --login_txt_color : #020202;
+    --lbl_text_clr : #221717;
+    --inp_text_clr : #010101;
+    --inp_bg_clr : #efefef;
+    --txt_border_clr : 2px solid #999999;
+    --line_clr : #555555;
+    --btn_bg: #efefef;
+    --btn_bg_hover: #292929;
+    --btn_txt_clr_hover: #fedfed;
+    --txt_border_clr_focused : 2px solid #2D5CFE;
+}
+body {
+    background: var(--body-bg);
+}
+.wrapper{
+    max-width: 600px;
+    min-width: 600px;
+    max-height: 550px;
+    min-height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: var(--wrapper_bg);
+    border-radius: 7px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.login_label {
+    font-size: 50px;
+    color: var(--login_txt_color);
+    text-align: center;
+}
+.lbl_username {
+    position: absolute;
+    left: 10%;
+    top: 22%;
+    font-size: 18px;
+    color: var(--lbl_text_clr);    
+}
+
+.txt_username {
+    position: absolute;
+    left: 30%;
+    top: 19%;
+    width: 60%;
+    height: 10%;
+    outline: none;
+    font-size: 18px;
+    padding-left: 1.4%;
+    color: var(--inp_text_clr);
+    background : var(--inp_bg_clr);
+    border : var(--txt_border_clr);
+    border-radius: 5px;
+}
+.txt_username:focus {
+    border : var(--txt_border_clr_focused);
+}
+.lbl_email {
+    position: absolute;
+    left: 10%;
+    top: 36%;
+    font-size: 18px;
+    color: var(--lbl_text_clr);    
+}
+
+.txt_email {
+    position: absolute;
+    left: 30%;
+    top: 32%;
+    width: 60%;
+    height: 10%;
+    outline: none;
+    font-size: 18px;
+    padding-left: 1.4%;
+    color: var(--inp_text_clr);
+    background : var(--inp_bg_clr);
+    border : var(--txt_border_clr);
+    border-radius: 5px;
+}
+.txt_email:focus {
+    border : var(--txt_border_clr_focused);
+}
+.lbl_password {
+    position: absolute;
+    left: 10%;
+    top: 47%;
+    font-size: 18px;
+    color: var(--lbl_text_clr);    
+}
+
+.txt_password {
+    position: absolute;
+    left: 30%;
+    top: 46%;
+    width: 60%;
+    height: 10%;
+    outline: none;
+    font-size: 18px;
+    padding-left: 1.4%;
+    color: var(--inp_text_clr);
+    background : var(--inp_bg_clr);
+    border : var(--txt_border_clr);
+    border-radius: 5px;   
+}
+.txt_password:focus {
+    border : var(--txt_border_clr_focused);
+}
+.txt_password_conform {
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    width: 60%;
+    height: 10%;
+    outline: none;
+    font-size: 18px;
+    padding-left: 1.4%;
+    color: var(--inp_text_clr);
+    background : var(--inp_bg_clr);
+    border : var(--txt_border_clr);
+    border-radius: 5px;   
+}
+.txt_password_conform:focus {
+    border : var(--txt_border_clr_focused);
+}
+.btn_signup {
+    position: absolute;
+    left: 8%;
+    top: 79%;
+    width: 40%;
+    height: 10%;
+    cursor: pointer;
+    border-radius: 20px;
+    background: var(--btn_bg);
+    border: none;
+}
+.btn_clear {
+    position: absolute;
+    left: 52%;
+    top: 79%;
+    width: 40%;
+    height: 10%;
+    cursor: pointer;
+    border-radius: 20px;
+    background: var(--btn_bg);
+    border: none;
+}
+.btn_signup:hover {
+    background: var(--btn_bg_hover);    
+    color: var(--btn_txt_clr_hover);
+}
+.btn_clear:hover {
+    background: var(--btn_bg_hover);    
+    color: var(--btn_txt_clr_hover);
+}
+.signup {
+    position: absolute;
+    left : 31%;
+    top: 91%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.signup:hover {
+    color : blue;
+}
+.theme {
+    position: absolute;
+    left: 96%;
+    top: 96%;    
+}
+.chkbox {
+    position: absolute;
+    left:33%;
+    top:68%;
+}
+.lbl_show_pwd {
+    position: absolute;
+    left:37%;
+    top:68%;
+}
+.pwd_ind {
+    position: absolute;
+    left: 10%;
+    top: 53%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 15px;
+    border: 2px solid blue;
+}

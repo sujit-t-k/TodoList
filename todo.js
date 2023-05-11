@@ -4,7 +4,12 @@ clearAll = document.querySelector(".clear-btn"),
 taskBox = document.querySelector(".task-box");
 
 let editId, isEditTask = false, todos = JSON.parse(localStorage.getItem("todo-list"));
-
+document.getElementById("login_user_name").innerHTML = "&nbsp;" + localStorage.getItem('user_name_current_log_in') + "&nbsp;&nbsp;<i class=\"fa fa-caret-down\"></i>";
+function logout() {
+    localStorage.setItem('user_name_current_log_in',"12");
+    localStorage.setItem('user_email_current_log_in',"12");
+    window.location.href="./index.html";
+};
 filters.forEach(btn => {
     btn.addEventListener("click", () => {
         document.querySelector("span.active").classList.remove("active");
@@ -256,6 +261,6 @@ if(localStorage.getItem('font') == undefined) {
 }
 function setFont(font_name) {
     localStorage.setItem('font', font_name);
-    lbl_font_name_shower.innerHTML = font_name;
+    lbl_font_name_shower.innerHTML = "&nbsp;" + font_name + "&nbsp;&nbsp;<i class=\"fa fa-caret-down\"></i>";
     document.documentElement.style.setProperty('--ff', '\'' + font_name + '\', sans-serif');
 }
