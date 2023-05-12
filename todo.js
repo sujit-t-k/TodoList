@@ -261,6 +261,6 @@ if(localStorage.getItem('font') == undefined) {
 }
 function setFont(font_name) {
     localStorage.setItem('font', font_name);
-    lbl_font_name_shower.innerHTML = "&nbsp;" + font_name + "&nbsp;&nbsp;<i class=\"fa fa-caret-down\"></i>";
+    lbl_font_name_shower.innerHTML = "&nbsp;" + font_name + "&nbsp;&nbsp;";// removed <i class=\"fa fa-caret-down\"></i>
     document.documentElement.style.setProperty('--ff', '\'' + font_name + '\', sans-serif');
 }
